@@ -7,8 +7,10 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 
+# Initialize the database
 db = SQLAlchemy()
 
+# Initialize the app
 def create_app():
     app = Flask(__name__)
     app.config.from_object('app.config')
